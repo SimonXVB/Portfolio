@@ -1,0 +1,46 @@
+#home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#home-morse {
+    margin-block: 1rem;
+}
+
+/*Image*/
+#home-img {
+    width: 250px;
+    height: 250px;
+    perspective: 800px;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+/*Image*/
+
+/*Headings*/
+#home-h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+#home-h2 {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+#home-h3 {
+    font-size: 1.3rem;
+}
+/*Headings*/
