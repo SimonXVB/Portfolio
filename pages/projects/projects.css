@@ -1,0 +1,24 @@
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+/*SVG*/
+#projects-svg {
+    width: fit-content;
+    perspective: 800px;
+    animation: rotate 10s linear infinite;
+}
+    
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+/*SVG*/

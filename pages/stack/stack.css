@@ -1,0 +1,72 @@
+#stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100%;
+    margin-block: 2rem              ;
+}
+
+/*SVG*/
+#stack-svg {
+    width: fit-content;
+    perspective: 800px;
+    animation: rotate 10s linear infinite;
+}
+    
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+/*SVG*/
+
+/*Headings*/
+#stack-h1 {
+    font-size: 2rem;
+}
+
+#stack-h2 {
+    font-size: 1.5rem;
+}
+/*Headings*/
+
+/*Links*/
+.stack-lang {
+    display: flex;
+    color: var(--main-green);
+    font-size: 1rem;
+    margin-block: 8px;
+    cursor: pointer;
+
+    a {
+        color: var(--main-green);
+    }
+}
+
+.stack-lang:hover {
+    color: white;
+
+    a {
+        color: white                
+    }
+}
+/*Links*/
+
+/*Arrow Animation*/
+@keyframes arrowAnim {
+    from {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+/*Arrow Animation*/

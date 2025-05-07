@@ -12,8 +12,8 @@ export function renderHome() {
     screen.innerHTML = "";
     container.id = "home-container";
 
-    img.src = "assets/smallerPFP.jpg"
     img.id = "home-img";
+    img.src = "assets/smallerPFP.jpg"
 
     h1.id = "home-h1";
     h1.innerHTML = "Welcome to my portfolio page!";
