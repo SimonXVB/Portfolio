@@ -31,6 +31,7 @@ body {
     background: black;
     border: 2px solid var(--main-green);
     border-top: 0;
+    overflow: auto;
 }
 
 #main-screen-text {
@@ -40,11 +41,13 @@ body {
     overflow-y: auto;
 }
 
-#main-text-container {
+#screen-input {
     display: flex;
+    position: sticky;
+    bottom: 0;
 }
 
-#main-text-container > input {
+#screen-input > input {
     width: 100%;
     box-sizing: border-box;
     background-color: black;
@@ -56,7 +59,7 @@ body {
     color: white;
 }
 
-#main-text-container > button {
+#screen-input > button {
     border: 0;
     background: var(--main-green);
     padding-inline: 15px;
@@ -64,7 +67,7 @@ body {
     border-left: 2px solid var(--main-green);
 }
 
-#main-text-container > button:hover {
+#screen-input > button:hover {
     cursor: pointer;
     background-color: black;
     color: white;

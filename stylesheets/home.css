@@ -5,6 +5,7 @@
     justify-content: center;
     box-sizing: border-box;
     height: 100%;
+    color: var(--main-green);
 }
 
 #home-morse {

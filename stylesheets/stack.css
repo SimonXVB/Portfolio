@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    min-height: 100%;
-    margin-block: 2rem              ;
+    margin-block: 2rem;
+    color: var(--main-green);
 }
 
 /*SVG*/
@@ -35,6 +35,14 @@
 }
 /*Headings*/
 
+/*Links Container*/
+#stack-lang-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Links Container*/
+
 /*Links*/
 .stack-lang {
     display: flex;
@@ -42,18 +50,18 @@
     font-size: 1rem;
     margin-block: 8px;
     cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid var(--main-green);
 
-    a {
-        color: var(--main-green);
+    p {
+        margin: 0;
+        padding-inline: 0.5rem;
     }
 }
 
 .stack-lang:hover {
     color: white;
-
-    a {
-        color: white                
-    }
+    border-color: white;
 }
 /*Links*/
 

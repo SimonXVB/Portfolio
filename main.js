@@ -1,13 +1,8 @@
-import { renderHome } from "./pages/home/home.js";
-import { renderStack } from "./pages/stack/stack.js";
-import { renderProjects } from "./pages/projects/projects.js";
-
 const screen = document.querySelector("#main-screen-text");
 const form = document.querySelector("#main-text-container");
 const input = document.querySelector("#main-text-container input");
 
 document.addEventListener("DOMContentLoaded", () => {
-    renderHome();
     input.focus();
 });
 
@@ -36,15 +31,6 @@ function renderError() {
 
 function renderSwitch() {
     switch (input.value.toLowerCase()) {
-        case "home": 
-            renderHome();
-            break;
-        case "stack":
-            renderStack();
-            break;
-        case "projects": 
-            renderProjects();
-            break;
         case "clear": 
             clearScreen()
             break;

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    color: var(--main-green);
 }
 
 /*SVG*/
