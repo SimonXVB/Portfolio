@@ -20,7 +20,7 @@
             </div>
         </div>
         <div id="main-screen">
-            <div id="home-container">
+            <div id="home" class="page">
                 <img src="/assets/smallerPFP.jpg" alt="Main Image" id="home-img">
                 <h1 id="home-h1">Welcome to my portfolio page!</h1>
                 <p id="home-morse">.-- . .-.. -.-. --- -- .</p>
@@ -28,7 +28,7 @@
                 <h3 id="home-h3">Web Dev</h3>
                 <p id="home-commands">Type 'help' to view a list of commands or 'all' to view the entire page.</p>
             </div>
-            <div id="stack-container">
+            <div id="stack" class="page" style="display: none;">
                 <svg id="stack-svg" xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
                     <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.6.6 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.6.6 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.6.6 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535z"/>
                     <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z"/>
@@ -156,7 +156,7 @@
                     </a>
                 </div>
             </div>
-            <div id="projects-container">
+            <div id="projects" class="page" style="display: none;">
                 <svg id="projects-svg" xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-clipboard-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2"/>
                 </svg>
@@ -164,8 +164,7 @@
                 <p id="projects-morse">.--. .-. --- .--- . -.-. - ...</p>
                 <div id="entry-container">
                     <div class="entry">
-                        <img src="/assets/odin.png" alt="Odin Project Logo">
-                        <div>
+                        <div class="entry-text-container">
                             <a href="https://github.com/SimonXVB/Odin-Project-Repo" target="_blank">Odin Project Repo</a>
                             <p>A Repo containing all of my 'The Odin Project' Projects.</p>
                             <div class="tags-container">
@@ -175,10 +174,10 @@
                                 <span>Other</span>
                             </div>
                         </div>
+                        <img src="/assets/odin.png" alt="Odin Project Logo">
                     </div>
                     <div class="entry">
-                        <img src="/assets/posta-logo.png" alt="Posta Social Logo">
-                        <div>
+                        <div class="entry-text-container">
                             <a href="https://github.com/SimonXVB/Posta-Social" target="_blank">Posta Social</a>
                             <p>A Social Media app inspired by Twitter.</p>
                             <div class="tags-container">
@@ -189,10 +188,10 @@
                                 <span>PostgreSQL</span>
                             </div>
                         </div>
+                        <img src="/assets/posta-logo.png" alt="Posta Social Logo">
                     </div>
                     <div class="entry">
-                        <img src="/assets/swan.png" alt="Swan Media Player Logo">
-                        <div>
+                        <div class="entry-text-container">
                             <a href="https://github.com/SimonXVB/Swan-MP" target="_blank">Swan Media Player</a>
                             <p>A media player written using electron.</p>
                             <div class="tags-container">
@@ -201,10 +200,10 @@
                                 <span>Electron</span>
                             </div>
                         </div>
+                        <img src="/assets/swan.png" alt="Swan Media Player Logo">
                     </div>
                     <div class="entry">
-                        <img src="/assets/PDEdit-Logo.png" alt="PDEdit Logo">
-                        <div>
+                        <div class="entry-text-container">
                             <a href="https://github.com/SimonXVB/PDEdit" target="_blank">PDEdit</a>
                             <p>A simple PDF editing app.</p>
                             <div class="tags-container">
@@ -212,14 +211,16 @@
                                 <span>Tailwind</span>
                             </div>
                         </div>
+                        <img src="/assets/PDEdit-Logo.png" alt="PDEdit Logo">
                     </div>
                 </div>
             </div>
-            <form id="screen-input">
-                <input type="text" placeholder="Type command here">
-                <button>>></button>
-            </form>
+            <div id="error-container"></div>
         </div>
+        <form id="screen-input">
+            <input type="text" placeholder="Type command here">
+            <button>>></button>
+        </form>
     </div>
     <script src="main.js"></script>
 </body>
