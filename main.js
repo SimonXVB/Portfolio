@@ -1,3 +1,5 @@
+import { setLang, currLang } from "./langSwitcher.js";
+
 const form = document.querySelector("#screen-input");
 const input = document.querySelector("#screen-input input");
 const pages = document.querySelectorAll(".page");
@@ -29,7 +31,7 @@ function renderPage(page) {
     });
     document.getElementById("help").style.display = "none";
     document.getElementById("error-container").innerHTML = "";
-    
+
     document.getElementById(page).style.display = "flex";
 };
 
@@ -47,7 +49,11 @@ function renderError() {
     const screen = document.getElementById("main-screen");
     const el = document.createElement("div");
 
-    el.innerHTML = "Command not found, type 'help' for a list of commands";
+    if(currLang === "de") {
+        el.innerHTML = "Command nicht gefunden, tippe 'help' ein um ein Liste der commands zu sehen";
+    } else {
+        el.innerHTML = "Command not found, type 'help' for a list of commands";
+    };
     el.className = "error";
 
     errorContainer.appendChild(el);
@@ -74,6 +80,12 @@ function commandSwitch() {
             break;
         case "clear":
             clearScreen();
+            break;
+        case "de":
+            setLang("de");
+            break;
+        case "en":
+            setLang("en");
             break;
         default :
             renderError();

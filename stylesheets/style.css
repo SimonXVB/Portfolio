@@ -56,6 +56,7 @@ body {
     background: var(--main-green);
     padding-inline: 15px;
     border-left: 2px solid var(--main-green);
+    color: black;
 }
 
 #screen-input > button:hover {

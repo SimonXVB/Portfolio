@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#">
+    <meta name="description" content="Welcome to my personal page!">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple.png">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/home.css">
     <link rel="stylesheet" href="stylesheets/stack.css">
     <link rel="stylesheet" href="stylesheets/projects.css">
-    <title>Portfolio</title>
+    <title>Portfolio | Simon M.</title>
 </head>
 <body>
     <div id="main-container">
@@ -171,7 +173,7 @@
                     <div class="entry">
                         <div class="entry-text-container">
                             <a href="https://github.com/SimonXVB/Odin-Project-Repo" target="_blank">Odin Project Repo</a>
-                            <p>A Repo containing all of my 'The Odin Project' Projects.</p>
+                            <p id="entry-odin">A Repo containing all of my 'The Odin Project' Projects</p>
                             <div class="tags-container">
                                 <span>HTML</span>
                                 <span>CSS</span>
@@ -184,7 +186,7 @@
                     <div class="entry">
                         <div class="entry-text-container">
                             <a href="https://github.com/SimonXVB/Posta-Social" target="_blank">Posta Social</a>
-                            <p>A Social Media app inspired by Twitter.</p>
+                            <p id="entry-posta">A Social Media app inspired by Twitter</p>
                             <div class="tags-container">
                                 <span>React</span>
                                 <span>Tailwind</span>
@@ -198,7 +200,7 @@
                     <div class="entry">
                         <div class="entry-text-container">
                             <a href="https://github.com/SimonXVB/Swan-MP" target="_blank">Swan Media Player</a>
-                            <p>A media player written using electron.</p>
+                            <p id="entry-swan">A media player written using electron</p>
                             <div class="tags-container">
                                 <span>React</span>
                                 <span>Tailwind</span>
@@ -210,10 +212,11 @@
                     <div class="entry">
                         <div class="entry-text-container">
                             <a href="https://github.com/SimonXVB/PDEdit" target="_blank">PDEdit</a>
-                            <p>A simple PDF editing app.</p>
+                            <p id="entry-pdedit">A simple PDF editing app</p>
                             <div class="tags-container">
                                 <span>React</span>
                                 <span>Tailwind</span>
+                                <span>TypeScript</span>
                             </div>
                         </div>
                         <img src="/assets/PDEdit-Logo.png" alt="PDEdit Logo">
@@ -228,6 +231,8 @@
                 <p>-- projects: Display the "projects" page</p>
                 <p>-- all: Display the entire page</p>
                 <p>-- clear: Clear the screen</p>
+                <p>-- en: Change language to english</p>
+                <p>-- de: Sprache auf Deutsch ändern</p>
             </div>
             <div id="error-container"></div>
         </div>
@@ -236,6 +241,7 @@
             <button>>></button>
         </form>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
+    <script src="langSwitcher.js" type="module"></script>
 </body>
 </html>
