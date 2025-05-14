@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin: 0;
     font-family: monospace;
     color: var(--main-green);
@@ -118,6 +118,6 @@ body {
 @media(max-width: 1250px) {
     #main-container {
         width: 100vw;
-        height: 100vh;
+        height: 100dvh;
     }
 }
