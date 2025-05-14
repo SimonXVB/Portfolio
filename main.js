@@ -19,6 +19,7 @@ function clearScreen() {
         page.style.display = "none";
     });
 
+    document.getElementById("help").style.display = "none";
     document.getElementById("error-container").innerHTML = "";
 };
 
@@ -26,12 +27,16 @@ function renderPage(page) {
     pages.forEach(page => {
         page.style.display = "none";
     });
-
-    document.getElementById(page).style.display = "flex";
+    document.getElementById("help").style.display = "none";
     document.getElementById("error-container").innerHTML = "";
+    
+    document.getElementById(page).style.display = "flex";
 };
 
 function renderAll() {
+    document.getElementById("help").style.display = "none";
+    document.getElementById("error-container").innerHTML = "";
+
     pages.forEach(page => {
         page.style.display = "flex";
     });
@@ -60,6 +65,9 @@ function commandSwitch() {
             break;
         case "projects":
             renderPage("projects");
+            break;
+        case "help":
+            renderPage("help");
             break;
         case "all": 
             renderAll();

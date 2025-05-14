@@ -3,15 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--main-green);
     margin-block: 2rem;
 }
 
 /*SVG*/
 #projects-svg {
-    width: fit-content;
     perspective: 800px;
     animation: rotate 10s linear infinite;
+    border: 2px solid var(--main-green);
+    padding: 1rem;
+    background-color: #00800021;
 }
     
 @keyframes rotate {
@@ -23,6 +24,28 @@
     }
 }
 /*SVG*/
+
+/*Text*/
+#projects-text {
+    border-block: 2px dashed var(--main-green);
+    margin: 2rem;
+    background-color: #00800021;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    padding-block: 1rem;
+}
+
+#projects-h1 {
+    font-size: 2rem;
+    margin-block: 0;
+}
+
+#projects-p {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+/*Text*/
 
 .entry {
     display: flex;
@@ -36,9 +59,9 @@
 
 .entry > img {
     height: 5rem;
-    aspect-ratio: 1/1;
 }
 
+/*Entry Text*/
 .entry-text-container {
     font-size: 1rem;
 }
@@ -60,7 +83,9 @@
 .entry-text-container a:hover {
     color: white;
 }
+/*Entry Text*/
 
+/*Tags*/
 .tags-container {
     width: fit-content;
     font-weight: 700;
@@ -73,4 +98,28 @@
 
 .tags-container span::after {
     content: "-";
+}
+/*Tags*/
+
+@media(max-width: 600px) {
+    #projects {
+        margin-inline: 1rem;
+    }
+
+    .entry > img {
+        height: 4rem;
+        aspect-ratio: 1/1;
+    }
+
+    .entry-text-container a {
+        font-size: 1.5rem;
+    }
+
+    .entry-text-container p {
+        font-size: 0.9rem;
+    }
+
+    .tags-container span {
+        font-size: 0.8rem;
+    }
 }

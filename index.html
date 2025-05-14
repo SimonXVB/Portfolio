@@ -22,20 +22,23 @@
         <div id="main-screen">
             <div id="home" class="page">
                 <img src="/assets/smallerPFP.jpg" alt="Main Image" id="home-img">
-                <h1 id="home-h1">Welcome to my portfolio page!</h1>
-                <p id="home-morse">.-- . .-.. -.-. --- -- .</p>
-                <h2 id="home-h2">My name is Simon</h2>
-                <h3 id="home-h3">Web Dev</h3>
-                <p id="home-commands">Type 'help' to view a list of commands or 'all' to view the entire page.</p>
+                <div>
+                    <h1 id="home-h1">Welcome to my portfolio page</h1>
+                    <p id="home-morse">.-- . .-.. -.-. --- -- .</p>
+                    <h2 id="home-h2">My name is Simon</h2>
+                    <h3 id="home-h3">Web Dev</h3>
+                </div>
+                <p id="home-commands">Type 'help' to view a list of commands or 'all' to view the entire page</p>
             </div>
             <div id="stack" class="page" style="display: none;">
-                <svg id="stack-svg" xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
+                <svg id="stack-svg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
                     <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.6.6 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.6.6 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.6.6 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535z"/>
                     <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z"/>
                 </svg>
-                <h1 id="stack-h1">Stack</h1>
-                <p id="stack-morse">... - .- -.-. -.-</p>
-                <h2 id="stack-h2">Tech I use</h2>
+                <div id="stack-text">
+                    <h1 id="stack-h1">Stack</h1>
+                    <p id="stack-p">-- Tech I use --</p>
+                </div>
                 <div id="stack-lang-container">
                     <a class="stack-lang" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
                         <span>&gt;</span>
@@ -60,6 +63,15 @@
                         <span>&gt;</span>
                         <span>&gt;</span>
                         <p>JavaScript</p>
+                        <span>&lt;</span>
+                        <span>&lt;</span>
+                        <span>&lt;</span>
+                    </a>
+                    <a class="stack-lang" href="https://www.typescriptlang.org" target="_blank">
+                        <span>&gt;</span>
+                        <span>&gt;</span>
+                        <span>&gt;</span>
+                        <p>TypeScript</p>
                         <span>&lt;</span>
                         <span>&lt;</span>
                         <span>&lt;</span>
@@ -145,23 +157,16 @@
                         <span>&lt;</span>
                         <span>&lt;</span>
                     </a>
-                    <a class="stack-lang" href="https://www.typescriptlang.org" target="_blank">
-                        <span>&gt;</span>
-                        <span>&gt;</span>
-                        <span>&gt;</span>
-                        <p>TypeScript</p>
-                        <span>&lt;</span>
-                        <span>&lt;</span>
-                        <span>&lt;</span>
-                    </a>
                 </div>
             </div>
             <div id="projects" class="page" style="display: none;">
-                <svg id="projects-svg" xmlns="http://www.w3.org/2000/svg" width="250" height="250" fill="currentColor" class="bi bi-clipboard-fill" viewBox="0 0 16 16">
+                <svg id="projects-svg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-clipboard-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2"/>
                 </svg>
-                <h1 id="projects-h1">Projects</h1>
-                <p id="projects-morse">.--. .-. --- .--- . -.-. - ...</p>
+                <div id="projects-text">
+                    <h1 id="projects-h1">Projects</h1>
+                    <p id="projects-p">-- Some of my projects --</p>
+                </div>
                 <div id="entry-container">
                     <div class="entry">
                         <div class="entry-text-container">
@@ -215,10 +220,19 @@
                     </div>
                 </div>
             </div>
+            <div id="help" style="display: none;">
+                <h1>Help Menu</h1>
+                <p>-- help: Display the help menu</p>
+                <p>-- home: Display the "home" page</p>
+                <p>-- stack: Display the "stack" page</p>
+                <p>-- projects: Display the "projects" page</p>
+                <p>-- all: Display the entire page</p>
+                <p>-- clear: Clear the screen</p>
+            </div>
             <div id="error-container"></div>
         </div>
         <form id="screen-input">
-            <input type="text" placeholder="Type command here">
+            <input type="text" placeholder="Enter command here">
             <button>>></button>
         </form>
     </div>

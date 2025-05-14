@@ -1,24 +1,26 @@
 #home {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    box-sizing: border-box;
+    align-items: center;
     height: 100%;
-    color: var(--main-green);
-    margin-block: 2rem;
+    margin: 2rem;
 }
 
-#home-morse {
-    margin-block: 1rem;
+#home > div {
+    border-block: 2px dashed var(--main-green);
+    margin-block: 2rem;
+    background-color: #00800021;
+    padding-inline: 1rem;
 }
 
 /*Image*/
 #home-img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     perspective: 800px;
     animation: rotate 10s linear infinite;
+    border: 2px solid var(--main-green);
 }
 
 @keyframes rotate {
@@ -34,15 +36,25 @@
 /*Headings*/
 #home-h1 {
     font-size: 2rem;
-    margin-bottom: 0;
+    margin-top: 1rem;
 }
 
-#home-h2 {
-    font-size: 1.7rem;
-    margin: 0;
-}
-
-#home-h3 {
-    font-size: 1.3rem;
+#home-h2, #home-h3 {
+    font-size: 1.5rem;
+    margin-block: 1rem;
 }
 /*Headings*/
+
+@media(max-width: 600px) {
+    #home {
+        margin-inline: 1rem;
+    }
+
+    #home-h1 {
+        font-size: 1.5rem;
+    }
+
+    #home-h2, #home-h3 {
+        font-size: 1.2rem;
+    }
+}
