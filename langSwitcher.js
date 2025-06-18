@@ -9,8 +9,6 @@ const posta = document.getElementById("entry-posta");
 const swan = document.getElementById("entry-swan");
 const pdedit = document.getElementById("entry-pdedit");
 
-const helpEntries = document.querySelectorAll("#help p");
-
 const elements = [homeH1, homeH2, homeCommands, stackP, projectsH1, projectsP, odin, posta, swan, pdedit];
 
 const enLang = {
@@ -38,28 +36,6 @@ const deLang = {
     swan: "Ein simpler Media Player, entwickelt mit Electron",
     pdedit: "Eine PDF-Bearbeitungs App",
 };
-
-const enHelp = [
-    '-- help: Display the help menu',
-    '-- home: Display the "home" page',
-    '-- stack: Display the "stack" page',
-    '-- projects: Display the "projects" page',
-    '-- all: Display the entire page',
-    '-- clear: Clear the screen',
-    '-- en: Change language to english',
-    '-- de: Sprache auf Deutsch ändern'
-];
-
-const deHelp = [
-    '-- help: Hilfe Menü aufrufen',
-    '-- home: "Home" Seite aufrufen',
-    '-- stack: "Stack" Seite aufrufen',
-    '-- projects: "Projekte" Seite aufrufen',
-    '-- all: Gesamte Seite aufrufen',
-    '-- clear: Gesamte Seite leeren',
-    '-- en: Change language to english',
-    '-- de: Sprache auf Deutsch ändern'
-];
 
 export let currLang = navigator.language || "en";
 

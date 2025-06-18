@@ -17,7 +17,7 @@
 </head>
 <body>
     <div id="main-container">
-        <div id="home">
+        <div id="home" style="display: none;">
 <pre id="home-letter">
 _____/\\\\\\\\\\\___        
  ___/\\\/////////\\\_       
@@ -31,7 +31,7 @@ _____/\\\\\\\\\\\___
 </pre>
             <div id="home-main">
                 <fieldset id="home-fieldset">
-                    <legend>Portfolio</legend>
+                    <legend>Portfolio &gt;&gt; Home</legend>
                     <p>Name&gt;&gt; Simon M.</p>
                     <p>Profession&gt;&gt; Hobbyist Web Dev</p>
                     <p>Current Focus&gt;&gt; React & TypeScript</p>
@@ -65,136 +65,77 @@ _____/\\\\\\\\\\\___
                 </div>
             </div>
         </div>
-        <div id="stack" class="page" style="display: none;">
-            <svg id="stack-svg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-                <path d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.6.6 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.6.6 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.6.6 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535z"/>
-                <path d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.6.6 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0z"/>
-            </svg>
-            <div id="stack-text">
-                <h1 id="stack-h1">Stack</h1>
-                <p id="stack-p">-- Tech I use --</p>
+        <div id="stack">
+            <div id="carousel-container">
+                <button id="carousel-prev"><span>&lt;</span></button>
+                <div id="carousel-panels">
+                    <div class="panel">
+                        <img src="./assets/smallerPFP.jpg" alt="HTML Logo">
+                        <p>HTML</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="CSS Logo">
+                        <p>CSS</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="JavaScript Logo">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="TypeScript Logo">
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="Express Logo">
+                        <p>Express</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="React Logo">
+                        <p>React</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="PostgreSQL Logo">
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="Tailwind Logo">
+                        <p>Tailwind</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="Prisma ORM Logo">
+                        <p>Prisma ORM</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="Git Logo">
+                        <p>Git</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="Node Logo">
+                        <p>Node</p>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="Electron Logo">
+                        <p>Electron</p>
+                    </div>
+                </div>
+                <button id="carousel-next"><span>&gt;</span></button>
             </div>
-            <div id="stack-lang-container">
-                <a class="stack-lang" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>HTML</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>CSS</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>JavaScript</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://www.typescriptlang.org" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>TypeScript</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://expressjs.com" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>Express</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://react.dev" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>React</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://www.postgresql.org" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>PostgreSQL</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://tailwindcss.com" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>Tailwind</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://www.prisma.io" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>Prisma ORM</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://git-scm.com" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>Git</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://nodejs.org" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>Node JS</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://www.electronjs.org" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>Electron</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
-                <a class="stack-lang" href="https://github.com" target="_blank">
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <span>&gt;</span>
-                    <p>GitHub</p>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                    <span>&lt;</span>
-                </a>
+            <div id="carousel-all">
+                <button style="outline: 2px solid var(--main-green);"><img src="./assets/smallerPFP.jpg" alt="HTML Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="CSS Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="JavaScript Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="TypeScript Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="Express Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="React Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="PostgreSQL Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="Tailwind Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="Prisma ORM Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="Git Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="Node Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="Electron Logo"></button>
             </div>
         </div>
-        <div id="projects" class="page" style="display: none;">
+        <div id="projects" style="display: none;">
             <svg id="projects-svg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-clipboard-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2"/>
             </svg>

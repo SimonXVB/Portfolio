@@ -38,6 +38,7 @@
 
 #home-lights {
     margin-top: 24px;
+    pointer-events: none;
 
     > div {
         display: flex;

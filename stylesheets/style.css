@@ -3,6 +3,7 @@
 :root {
     --main-green: #006321;
     --auxiliary-green: #0063212d;
+    --main-font: "VT323", monospace;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    font-family: "VT323", monospace;
+    font-family: var(--main-font);
     color: var(--main-green);
     background: #000;
 }
@@ -23,16 +24,18 @@ a {
 #main-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
     width: 100vw;
     background-color: var(--auxiliary-green);
     box-sizing: border-box;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 #buttons {
     display: flex;
     gap: 8px;
+    margin-top: 4rem;
 
     button {
         background: none;
@@ -42,7 +45,7 @@ a {
         border: 2px solid var(--main-green);
         padding-block: 8px;
         width: 100%;
-        font-family: "VT323", monospace;
+        font-family: var(--main-font);
         cursor: pointer;
     }
 
