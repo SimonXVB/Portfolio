@@ -6,6 +6,12 @@
     flex-wrap: wrap;
     gap: 20px;
     overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#projects::-webkit-scrollbar {
+    display: none;
 }
 
 .entry {
@@ -43,5 +49,29 @@
         background-color: var(--main-green);
         color: #000;
         padding-inline: 4px;
+    }
+}
+
+@media(width < 1600px) {
+    .entry {
+        width: 40%;
+    }
+}
+
+@media(width < 1000px) {
+    .entry {
+        width: 100%;
+    }
+}
+
+@media(width < 500px) {
+    .entry-text-container {
+        a {
+            font-size: 1.7rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
     }
 }
