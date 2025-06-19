@@ -44,6 +44,7 @@ function imageCarousel() {
         currentIndex - 1 < 0 ? currentIndex = imagePanels.length - 1 : currentIndex--;
 
         panelButtons[currentIndex].style.outline = "2px solid var(--main-green)";
+        panelButtons[currentIndex].scrollIntoView({ behavior: "smooth", inline: "center" });
         panelButtons[prevIndex].style.outline = "";
 
         imagePanels.forEach(panel => {
@@ -66,6 +67,7 @@ function imageCarousel() {
         currentIndex + 1 > imagePanels.length - 1 ? currentIndex = 0 : currentIndex++;
 
         panelButtons[currentIndex].style.outline = "2px solid var(--main-green)";
+        panelButtons[currentIndex].scrollIntoView({ behavior: "smooth", inline: "center" });
         panelButtons[prevIndex].style.outline = "";
 
         imagePanels.forEach(panel => {
@@ -90,6 +92,7 @@ function imageCarousel() {
             currentIndex = i;
 
             panelButtons[currentIndex].style.outline = "2px solid var(--main-green)";
+            panelButtons[currentIndex].scrollIntoView({ behavior: "smooth", inline: "center" });
             panelButtons[prevIndex].style.outline = "";
 
             imagePanels.forEach(panel => {
@@ -110,5 +113,6 @@ function imageCarousel() {
     prevButton.addEventListener("click", prev);
     nextButton.addEventListener("click", next);
     imagePanels[currentIndex].style.display = "block";
+    panelButtons[currentIndex].scrollIntoView();
 };
 imageCarousel();

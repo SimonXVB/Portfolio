@@ -24,7 +24,7 @@ a:hover {
 #main-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
     background-color: var(--auxiliary-green);
     box-sizing: border-box;
     padding: 2.5rem;
@@ -129,7 +129,7 @@ a:hover {
 
 @media(width < 600px) {
     #main-container {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     #buttons button {

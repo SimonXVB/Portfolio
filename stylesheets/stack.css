@@ -32,6 +32,9 @@
 
 .panel {
     display: none;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     border: 2px solid var(--main-green);
     overflow: auto;
@@ -49,8 +52,9 @@
 }
 
 #carousel-all {
-    width: 100%;
     display: flex;
+    justify-content: center;
+    width: 100%;
     gap: 8px;
     padding: 4px;
     overflow-x: auto;
@@ -59,12 +63,11 @@
 
     button {
         display: flex;
-        justify-content: center;
         align-items: center;
         background: none;
         border: 0;
         cursor: pointer;
-        padding: 4px;
+        padding-inline: 4px;
         padding-block: 8px;
     }
 
@@ -84,7 +87,7 @@
     }
     to {
         opacity: 0%;
-        right: 75%;
+        left: 75%;
         scale: 50%;
     }
 }
@@ -92,12 +95,12 @@
 @keyframes transitionInLeft {
     from {
         opacity: 0%;
-        right: 0%;
+        left: 10%;
     }
     to {
         opacity: 100%;
-        right: 50%;
-        transform: translateX(50%);
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -107,7 +110,7 @@
     }
     to {
         opacity: 0%;
-        right: 25%;
+        left: 25%;
         scale: 50%;
     }
 }
@@ -115,17 +118,53 @@
 @keyframes transitionInRight {
     from {
         opacity: 0%;
-        right: 100%;
+        left: 90%;
     }
     to {
         opacity: 100%;
-        right: 50%;
-        transform: translateX(50%);
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
-@media(width < 1400px) {
+@media(width < 950px) {
+    #carousel-all {
+        justify-content: left;
+    }
+
     #carousel-prev, #carousel-next {
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+
+    .panel {
+        p {
+            font-size: 2rem;
+        }
+
+        img {
+            height: 250px;
+        }
+    }
+}
+
+@media(width < 600px) {
+    #carousel-prev, #carousel-next {
+        font-size: 3rem;
+    }
+}
+
+@media(width < 500px) {
+    #carousel-prev, #carousel-next {
+        font-size: 2rem;
+    }
+
+    .panel {
+        p {
+            font-size: 2rem;
+        }
+
+        img {
+            height: 150px;
+        }
     }
 }
