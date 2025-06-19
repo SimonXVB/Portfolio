@@ -84,14 +84,13 @@ function imageCarousel() {
 
     panelButtons.forEach((button, i) => {
         button.addEventListener("click", () => {
+            if(i === currentIndex) return;
+
             prevIndex = currentIndex;
             currentIndex = i;
 
             panelButtons[currentIndex].style.outline = "2px solid var(--main-green)";
             panelButtons[prevIndex].style.outline = "";
-
-            
-            if(i === prevIndex) return;
 
             imagePanels.forEach(panel => {
                 panel.style.display = "none";

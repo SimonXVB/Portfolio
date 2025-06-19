@@ -50,14 +50,8 @@
     p {
         font-size: 3rem;
         margin-bottom: 0;
-    }
-
-    p::before {
-        content: "< ";
-    }
-
-    p::after {
-        content: " >";
+        background-color: var(--main-green);
+        color: #000;
     }
 
     img {

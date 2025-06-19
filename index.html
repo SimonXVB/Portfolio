@@ -17,7 +17,7 @@
 </head>
 <body>
     <div id="main-container">
-        <div id="home" style="display: none;">
+        <div id="home">
 <pre id="home-letter">
 _____/\\\\\\\\\\\___        
  ___/\\\/////////\\\_       
@@ -65,7 +65,7 @@ _____/\\\\\\\\\\\___
                 </div>
             </div>
         </div>
-        <div id="stack">
+        <div id="stack" style="display: none;">
             <div id="carousel-container">
                 <button id="carousel-prev"><span>&lt;</span></button>
                 <div id="carousel-panels">
@@ -117,6 +117,10 @@ _____/\\\\\\\\\\\___
                         <img src="./assets/smallerPFP.jpg" alt="Electron Logo">
                         <p>Electron</p>
                     </div>
+                    <div class="panel" aria-hidden="true">
+                        <img src="./assets/smallerPFP.jpg" alt="Socket.io Logo">
+                        <p>Socket.io</p>
+                    </div>
                 </div>
                 <button id="carousel-next"><span>&gt;</span></button>
             </div>
@@ -133,67 +137,72 @@ _____/\\\\\\\\\\\___
                 <button><img src="./assets/smallerPFP.jpg" alt="Git Logo"></button>
                 <button><img src="./assets/smallerPFP.jpg" alt="Node Logo"></button>
                 <button><img src="./assets/smallerPFP.jpg" alt="Electron Logo"></button>
+                <button><img src="./assets/smallerPFP.jpg" alt="Socket.io Logo"></button>
             </div>
         </div>
         <div id="projects" style="display: none;">
-            <svg id="projects-svg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-clipboard-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2"/>
-            </svg>
-            <div id="projects-text">
-                <h1 id="projects-h1">Projects</h1>
-                <p id="projects-p">-- Some of my projects --</p>
+            <div class="entry">
+                <img src="/assets/odin.png" alt="Odin Project Logo">
+                <div class="entry-text-container">
+                    <a href="https://github.com/SimonXVB/Odin-Project-Repo" target="_blank">Odin Project</a>
+                    <p id="entry-odin">A Repo containing all of my 'The Odin Project' Projects</p>
+                    <div class="tags-container">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Other</span>
+                    </div>
+                </div>
             </div>
-            <div id="entry-container">
-                <div class="entry">
-                    <div class="entry-text-container">
-                        <a href="https://github.com/SimonXVB/Odin-Project-Repo" target="_blank">Odin Project Repo</a>
-                        <p id="entry-odin">A Repo containing all of my 'The Odin Project' Projects</p>
-                        <div class="tags-container">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Other</span>
-                        </div>
+            <div class="entry">
+                <img src="/assets/posta-logo.png" alt="Posta Social Logo">
+                <div class="entry-text-container">
+                    <a href="https://github.com/SimonXVB/Posta-Social" target="_blank">Posta Social</a>
+                    <p id="entry-posta">A Social Media app inspired by Twitter</p>
+                    <div class="tags-container">
+                        <span>React</span>
+                        <span>Tailwind</span>
+                        <span>Express</span>
+                        <span>Prsima ORM</span>
+                        <span>PostgreSQL</span>
                     </div>
-                    <img src="/assets/odin.png" alt="Odin Project Logo">
                 </div>
-                <div class="entry">
-                    <div class="entry-text-container">
-                        <a href="https://github.com/SimonXVB/Posta-Social" target="_blank">Posta Social</a>
-                        <p id="entry-posta">A Social Media app inspired by Twitter</p>
-                        <div class="tags-container">
-                            <span>React</span>
-                            <span>Tailwind</span>
-                            <span>Express</span>
-                            <span>Prsima ORM</span>
-                            <span>PostgreSQL</span>
-                        </div>
+            </div>
+            <div class="entry">
+                <img src="/assets/swan.png" alt="Swan Media Player Logo">
+                <div class="entry-text-container">
+                    <a href="https://github.com/SimonXVB/Swan-MP" target="_blank">Swan Media Player</a>
+                    <p id="entry-swan">A media player written using electron</p>
+                    <div class="tags-container">
+                        <span>React</span>
+                        <span>Tailwind</span>
+                        <span>Electron</span>
                     </div>
-                    <img src="/assets/posta-logo.png" alt="Posta Social Logo">
                 </div>
-                <div class="entry">
-                    <div class="entry-text-container">
-                        <a href="https://github.com/SimonXVB/Swan-MP" target="_blank">Swan Media Player</a>
-                        <p id="entry-swan">A media player written using electron</p>
-                        <div class="tags-container">
-                            <span>React</span>
-                            <span>Tailwind</span>
-                            <span>Electron</span>
-                        </div>
+            </div>
+            <div class="entry">
+                <img src="/assets/PDEdit-Logo.png" alt="PDEdit Logo">
+                <div class="entry-text-container">
+                    <a href="https://github.com/SimonXVB/PDEdit" target="_blank">PDEdit</a>
+                    <p id="entry-pdedit">A simple PDF editing app</p>
+                    <div class="tags-container">
+                        <span>React</span>
+                        <span>Tailwind</span>
+                        <span>TypeScript</span>
                     </div>
-                    <img src="/assets/swan.png" alt="Swan Media Player Logo">
                 </div>
-                <div class="entry">
-                    <div class="entry-text-container">
-                        <a href="https://github.com/SimonXVB/PDEdit" target="_blank">PDEdit</a>
-                        <p id="entry-pdedit">A simple PDF editing app</p>
-                        <div class="tags-container">
-                            <span>React</span>
-                            <span>Tailwind</span>
-                            <span>TypeScript</span>
-                        </div>
+            </div>
+            <div class="entry">
+                <img src="/assets/PDEdit-Logo.png" alt="PDEdit Logo">
+                <div class="entry-text-container">
+                    <a href="https://github.com/SimonXVB/Draw2Gether" target="_blank">Draw2Gether</a>
+                    <p id="entry-pdedit">A room-based interactive drawing app</p>
+                    <div class="tags-container">
+                        <span>React</span>
+                        <span>Tailwind</span>
+                        <span>TypeScript</span>
+                        <span>Socket.io</span>
                     </div>
-                    <img src="/assets/PDEdit-Logo.png" alt="PDEdit Logo">
                 </div>
             </div>
         </div>
