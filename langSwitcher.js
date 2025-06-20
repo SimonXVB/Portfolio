@@ -1,45 +1,52 @@
-const homeH1 = document.getElementById("home-h1");
-const homeH2 = document.getElementById("home-h2");
-const homeCommands = document.getElementById("home-commands");
-const stackP = document.getElementById("stack-p");
-const projectsH1 = document.getElementById("projects-h1");
-const projectsP = document.getElementById("projects-p");
+const currentFocus = document.getElementById("current-focus");
+const githubProfile = document.getElementById("github-profile");
+const mostRecent = document.getElementById("most-recent");
+
 const odin = document.getElementById("entry-odin");
 const posta = document.getElementById("entry-posta");
 const swan = document.getElementById("entry-swan");
 const pdedit = document.getElementById("entry-pdedit");
+const draw2gether = document.getElementById("entry-draw2gether");
 
-const elements = [homeH1, homeH2, homeCommands, stackP, projectsH1, projectsP, odin, posta, swan, pdedit];
+const checkbox = document.getElementById("check");
+
+const elements = [currentFocus, githubProfile, mostRecent, odin, posta, swan, pdedit, draw2gether];
 
 const enLang = {
-    homeH1: "Welcome to my portfolio page",
-    homeH2: "My name is Simon",
-    homeCommands: "Type 'help' to view a list of commands or 'all' to view the entire page",
-    stackP: "-- Tech I use --",
-    projectsH1: "Projects",
-    projectsP: "-- Some of my projects --",
+    currentFocus: "Current Focus&gt;&gt; React & TypeScript",
+    githubProfile: "Github Profile&gt;&gt;",
+    mostRecent: "Most Recent&gt;&gt;",
     odin: "A Repo containing all of my 'The Odin Project' Projects",
     posta: "A Social Media app inspired by Twitter",
     swan: "A media player written using electron",
     pdedit: "A simple PDF editing app",
+    draw2gether: "A room-based interactive drawing app"
 };
 
 const deLang = {
-    homeH1: "Wilkommen auf meiner Seite",
-    homeH2: "Mein name ist Simon",
-    homeCommands: "Tippe 'help' um eine Liste der Commands zu sehen oder 'all' um die gesamte Seite zu sehen",
-    stackP: "-- Technologien, die ich verwende --",
-    projectsH1: "Projekte",
-    projectsP: "-- Einige meiner Projekte --",
+    currentFocus: "Aktueller Fokus&gt;&gt; React & TypeScript",
+    githubProfile: "Github Profil&gt;&gt;",
+    mostRecent: "Neuestes Projekt&gt;&gt;",
     odin: "Ein Repo, welches all meine 'The Odin Project' Projekte enthält",
     posta: "Eine Social-Media App, inspiriert von Twitter",
     swan: "Ein simpler Media Player, entwickelt mit Electron",
     pdedit: "Eine PDF-Bearbeitungs App",
+    draw2gether: "Eine raumbasierte interaktive Zeichen-App"
 };
 
-export let currLang = navigator.language || "en";
+let currLang = navigator.language || "en";
+if(currLang === "de") checkbox.checked = true;
 
-function checkLang() {
+checkbox.addEventListener("click", () => {
+    if(!checkbox.checked) {
+        currLang = "en";
+    } else {
+        currLang = "de"
+    };
+    setLang();
+});
+
+function setLang() {
     for(let i = 0; i < elements.length; i++) {
         if(currLang === "de") {
             elements[i].innerHTML = Object.values(deLang)[i];
@@ -47,18 +54,5 @@ function checkLang() {
             elements[i].innerHTML = Object.values(enLang)[i];
         };
     };
-
-    helpEntries.forEach((entry, i) => {
-        if(currLang === "de") {
-            entry.innerHTML = deHelp[i];
-        } else {
-            entry.innerHTML = enHelp[i];
-        };
-    });
 };
-checkLang();
-
-export function setLang(lang) {
-    currLang = lang;
-    checkLang();
-};
+setLang();
