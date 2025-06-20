@@ -17,7 +17,7 @@
 </head>
 <body>
     <div id="main-container">
-        <div id="home" style="display: none;">
+        <div id="home">
 <pre id="home-letter">
 _____/\\\\\\\\\\\___        
  ___/\\\/////////\\\_       
@@ -65,65 +65,93 @@ _____/\\\\\\\\\\\___
                 </div>
             </div>
         </div>
-        <div id="stack">
+        <div id="stack" style="display: none;">
             <div id="carousel-container">
                 <button id="carousel-prev"><span>&lt;</span></button>
-                <div class="panel">
-                    <img src="./assets/smallerPFP.jpg" alt="HTML Logo">
-                    <p>HTML</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="CSS Logo">
-                    <p>CSS</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="JavaScript Logo">
-                    <p>JavaScript</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="TypeScript Logo">
-                    <p>TypeScript</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="Express Logo">
-                    <p>Express</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="React Logo">
-                    <p>React</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="PostgreSQL Logo">
-                    <p>PostgreSQL</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="Tailwind Logo">
-                    <p>Tailwind</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="Prisma ORM Logo">
-                    <p>Prisma ORM</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="Git Logo">
-                    <p>Git</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="Node Logo">
-                    <p>Node</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="Electron Logo">
-                    <p>Electron</p>
-                </div>
-                <div class="panel" aria-hidden="true">
-                    <img src="./assets/smallerPFP.jpg" alt="Socket.io Logo">
-                    <p>Socket.io</p>
+                <div id="panel-container">
+                    <div class="panel" aria-hidden="false" data-active>
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="HTML Logo">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="CSS Logo">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="JavaScript Logo">
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="TypeScript Logo">
+                            <p>TypeScript</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="Express Logo">
+                            <p>Express</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="React Logo">
+                            <p>React</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="PostgreSQL Logo">
+                            <p>PostgreSQL</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="Tailwind Logo">
+                            <p>Tailwind</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="Prisma ORM Logo">
+                            <p>Prisma ORM</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="Git Logo">
+                            <p>Git</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="Node Logo">
+                            <p>Node</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="Electron Logo">
+                            <p>Electron</p>
+                        </div>
+                    </div>
+                    <div class="panel" aria-hidden="true">
+                        <div>
+                            <img src="./assets/smallerPFP.jpg" alt="Socket.io Logo">
+                            <p>Socket.io</p>
+                        </div>
+                    </div>
                 </div>
                 <button id="carousel-next"><span>&gt;</span></button>
             </div>
             <div id="carousel-all">
-                <button style="outline: 2px solid var(--main-green);"><img src="./assets/smallerPFP.jpg" alt="HTML Logo"></button>
+                <button data-active><img src="./assets/smallerPFP.jpg" alt="HTML Logo"></button>
                 <button><img src="./assets/smallerPFP.jpg" alt="CSS Logo"></button>
                 <button><img src="./assets/smallerPFP.jpg" alt="JavaScript Logo"></button>
                 <button><img src="./assets/smallerPFP.jpg" alt="TypeScript Logo"></button>
@@ -205,7 +233,7 @@ _____/\\\\\\\\\\\___
             </div>
         </div>
         <div id="buttons">
-            <button>[Home]</button>
+            <button data-active>[Home]</button>
             <button>[Stack]</button>
             <button>[Projects]</button>
         </div>

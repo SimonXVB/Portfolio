@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     height: 100%;
 }
 
@@ -19,10 +18,9 @@
     border: 2px solid var(--main-green);
     color: var(--main-green);
     padding-inline: 12px;
-    font-size: 8rem;
+    font-size: 4rem;
     cursor: pointer;
     font-family: var(--main-font);
-    z-index: 10;
 }
 
 #carousel-prev:hover, #carousel-next:hover {
@@ -30,20 +28,29 @@
     color: #000;
 }
 
+#panel-container {
+    display: flex;
+    overflow: hidden;
+}
+
 .panel {
-    display: none;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    border: 2px solid var(--main-green);
-    overflow: auto;
+    min-width: 100%;
+    box-sizing: border-box;
+
+    div {
+        border: 2px solid var(--main-green);
+    }
     
     p {
         font-size: 3rem;
-        margin-bottom: 0;
+        margin: 0;
         background-color: var(--main-green);
         color: #000;
+
     }
 
     img {
@@ -54,7 +61,6 @@
 #carousel-all {
     display: flex;
     justify-content: center;
-    width: 100%;
     gap: 8px;
     padding: 4px;
     overflow-x: auto;
@@ -69,6 +75,12 @@
         cursor: pointer;
         padding-inline: 4px;
         padding-block: 8px;
+        transition: all 0.2s;
+    }
+
+    button[data-active] {
+        outline: 2px solid var(--main-green);
+        scale: 110%;
     }
 
     img {
@@ -78,62 +90,12 @@
 }
 
 #carousel-all::-webkit-scrollbar { 
-    display: none;  /* Older Safari and Chromium */
-}
-
-@keyframes transitionOutLeft {
-    from {
-        opacity: 100%;
-    }
-    to {
-        opacity: 0%;
-        left: 75%;
-        scale: 50%;
-    }
-}
-
-@keyframes transitionInLeft {
-    from {
-        opacity: 0%;
-        left: 10%;
-    }
-    to {
-        opacity: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@keyframes transitionOutRight {
-    from {
-        opacity: 100%;
-    }
-    to {
-        opacity: 0%;
-        left: 25%;
-        scale: 50%;
-    }
-}
-
-@keyframes transitionInRight {
-    from {
-        opacity: 0%;
-        left: 90%;
-    }
-    to {
-        opacity: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    display: none;
 }
 
 @media(width < 950px) {
     #carousel-all {
         justify-content: left;
-    }
-
-    #carousel-prev, #carousel-next {
-        font-size: 4rem;
     }
 
     .panel {
@@ -149,22 +111,14 @@
 
 @media(width < 600px) {
     #carousel-prev, #carousel-next {
-        font-size: 3rem;
+        display: none;
     }
 }
 
 @media(width < 500px) {
-    #carousel-prev, #carousel-next {
-        font-size: 2rem;
-    }
-
     .panel {
-        p {
-            font-size: 2rem;
-        }
-
         img {
-            height: 150px;
+            height: 200px;
         }
     }
 }

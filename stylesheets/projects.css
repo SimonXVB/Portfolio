@@ -43,6 +43,10 @@
 }
 
 .tags-container {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
     font-size: 1.2rem;
 
     span {
