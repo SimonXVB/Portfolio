@@ -55,6 +55,7 @@
 
     img {
         height: 300px;
+        margin: 12px;
     }
 }
 
@@ -70,27 +71,35 @@
     button {
         display: flex;
         align-items: center;
+        justify-content: center;
         background: none;
         border: 0;
         cursor: pointer;
-        padding-inline: 4px;
-        padding-block: 8px;
         transition: all 0.2s;
+        min-width: 60px;
+        padding-block: 8px;
     }
 
     button[data-active] {
-        outline: 2px solid var(--main-green);
+        outline: 1px solid var(--main-green);
         scale: 110%;
     }
 
     img {
-        height: 50px;
+        height: 40px;
         pointer-events: none;
     }
 }
 
 #carousel-all::-webkit-scrollbar { 
     display: none;
+}
+
+.img-bg {
+    background-color: var(--main-green);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 4px;
 }
 
 @media(width < 950px) {

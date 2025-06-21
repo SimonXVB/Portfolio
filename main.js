@@ -21,9 +21,11 @@ function changeTab() {
         button.addEventListener("click", () => {
             for(let i = 0; i < ids.length; i++) {
                 document.querySelector(ids[i]).style.display = "none";
+                buttons[i].removeAttribute("data-active")
             };
-
+            
             document.querySelector(ids[index]).style.display = "flex";
+            button.setAttribute("data-active", "true");
         });
     });
 };
@@ -130,15 +132,3 @@ function imageCarousel() {
     newInterval();
 };
 imageCarousel();
-
-function setActiveButton() {
-    const buttons = document.querySelectorAll("#buttons button");
-
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            buttons.forEach(button => button.removeAttribute("data-active"));
-            button.setAttribute("data-active", "true");
-        });
-    });
-};
-setActiveButton();
