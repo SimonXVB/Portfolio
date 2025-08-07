@@ -1,0 +1,15 @@
+#footer {
+    text-align: center;
+    margin-block: 2rem;
+}
+
+#footer a {
+    font-family: "Cal Sans", sans-serif;
+    text-decoration: none;
+    color: #FCFAEE;
+    font-size: 2rem;
+}
+
+#footer a:hover {
+    color: #DA8359;
+}

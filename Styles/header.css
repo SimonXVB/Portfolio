@@ -1,0 +1,75 @@
+#header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../Assets/arrow1.svg), url(../Assets/smiley.svg);
+    background-repeat: no-repeat;
+    background-size: 11rem, 8rem;
+    background-position: 63% 85%, 20% 35%;
+}
+
+#header > div {
+    z-index: 20;
+}
+
+#header h1 {
+    margin: 4px;
+    font-family: "Sour Gummy", sans-serif;
+    color: #FCFAEE;
+    font-size: 4.5rem;
+}
+
+#header h1::before {
+    content: "<";
+    color: #DA8359;
+}
+
+#header h1::after {
+    content: ">";
+    color: #DA8359;
+}
+
+#header span {
+    color: #DA8359;
+}
+
+#header h2 {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 900;
+    margin: 0;
+    color: #FCFAEE;
+    font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+    #header {
+        background-size: 8rem;
+        background-position: 90% 85%, 10% 20% !important;
+        background-size: 9rem, 5rem !important;
+    }
+
+    #header h1 {
+        font-size: 3.5rem;
+        text-align: left;
+    }
+
+    #header h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #header svg {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #header {
+        background-position: 80% 85%, 5% 50%;
+        background-size: 10rem, 8rem;
+    }
+}

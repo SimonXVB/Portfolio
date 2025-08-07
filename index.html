@@ -2,262 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
-    <meta name="description" content="Me, myself and I">
-    <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
-    <link rel="shortcut icon" href="assets/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/home.css">
-    <link rel="stylesheet" href="stylesheets/stack.css">
-    <link rel="stylesheet" href="stylesheets/projects.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/footer.css">
+    <link rel="stylesheet" href="/Styles/header.css">
+    <link rel="stylesheet" href="/Styles/nav.css">
+    <link rel="stylesheet" href="/Styles/projects.css">
+    <link rel="stylesheet" href="/Styles/stack.css">
+    <link rel="icon" type="image/png" href="Assets/favicon-96x96.png" sizes="96x96"/>
+    <link rel="shortcut icon" href="Assets/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png"/>
     <title>Portfolio</title>
-    <style>@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');</style>
 </head>
-<body>
-    <div id="main-container">
-        <div id="home">
-<pre id="home-letter">
-_____/\\\\\\\\\\\___        
- ___/\\\/////////\\\_       
-  __\//\\\______\///__      
-   ___\////\\\_________     
-    ______\////\\\______    
-     _________\////\\\___   
-      __/\\\______\//\\\__  
-       _\///\\\\\\\\\\\/___ 
-        ___\///////////_____
-</pre>
-            <div id="home-main">
-                <fieldset id="home-fieldset">
-                    <legend>Portfolio &gt;&gt; Home</legend>
-                    <p>Name&gt;&gt; Simon M.</p>
-                    <p>Hobby&gt;&gt; Web Dev</p>
-                    <p id="current-focus">Current Focus&gt;&gt; React & TypeScript</p>
-                    <fieldset id="links-fieldset">
-                        <legend>Links</legend>
-                        <p>
-                            <span id="github-profile">Github Profile&gt;&gt;</span>
-                            <a href="https://github.com/SimonXVB" target="_blank">Click here</a>
-                        </p>
-                        <p>
-                            <span id="most-recent">Most Recent&gt;&gt;</span>
-                            <a href="https://github.com/SimonXVB/Draw2Gether" target="_blank">Draw2Gether</a>
-                        </p>
-                    </fieldset>
-                </fieldset>
-                <div id="bottom-panel">
-                    <div id="home-lights">
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-                    <div id="lang-switch">
-                        <p>EN</p>
-                        <div id="switch-container">
-                            <label for="check" aria-hidden="true">
-                                <input type="checkbox" id="check" aria-hidden="true">
-                                <div></div>
-                            </label>
-                        </div>
-                        <p>DE</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="stack" style="display: none;">
-            <div id="carousel-container">
-                <button id="carousel-prev"><span>&lt;</span></button>
-                <div id="panel-container">
-                    <div class="panel" aria-hidden="false" data-active>
-                        <div>
-                            <img src="./assets/html.png" alt="HTML Logo">
-                            <p>HTML</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/css.png" alt="CSS Logo">
-                            <p>CSS</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/js.png" alt="JavaScript Logo">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/ts.png" alt="TypeScript Logo">
-                            <p>TypeScript</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/react.png" alt="React Logo">
-                            <p>React</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/postgres.png" alt="PostgreSQL Logo">
-                            <p>PostgreSQL</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/node.png" alt="Node Logo">
-                            <p>Node</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/electron.png" alt="Electron Logo">
-                            <p>Electron</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/socketIO.png" alt="Socket.io Logo" class="img-bg">
-                            <p>Socket.io</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/prisma.png" alt="Prisma ORM Logo" class="img-bg" class="img-bg">
-                            <p>Prisma ORM</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/Git.png" alt="Git Logo" class="img-bg">
-                            <p>Git</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/tailwind.png" alt="Tailwind Logo" class="img-bg">
-                            <p>Tailwind</p>
-                        </div>
-                    </div>
-                    <div class="panel" aria-hidden="true">
-                        <div>
-                            <img src="./assets/express.png" alt="Express Logo" class="img-bg">
-                            <p>Express</p>
-                        </div>
-                    </div>
-                </div>
-                <button id="carousel-next"><span>&gt;</span></button>
-            </div>
-            <div id="carousel-all">
-                <button data-active><img src="./assets/html.png" alt="HTML Logo"></button>
-                <button><img src="./assets/css.png" alt="CSS Logo"></button>
-                <button><img src="./assets/js.png" alt="JavaScript Logo"></button>
-                <button><img src="./assets/ts.png" alt="TypeScript Logo"></button>
-                <button><img src="./assets/react.png" alt="React Logo"></button>
-                <button><img src="./assets/postgres.png" alt="PostgreSQL Logo"></button>
-                <button><img src="./assets/node.png" alt="Node Logo"></button>
-                <button><img src="./assets/electron.png" alt="Electron Logo"></button>
-                <button><img src="./assets/socketIO.png" alt="Socket.io Logo" class="img-bg"></button>
-                <button><img src="./assets/prisma.png" alt="Prisma ORM Logo" class="img-bg"></button>
-                <button><img src="./assets/Git.png" alt="Git Logo" class="img-bg"></button>
-                <button><img src="./assets/tailwind.png" alt="Tailwind Logo" class="img-bg"></button>
-                <button><img src="./assets/express.png" alt="Express Logo" class="img-bg"></button>
-            </div>
-        </div>
-        <div id="projects" style="display: none;">
-            <div class="entry">
-                <img src="/assets/odin.png" alt="Odin Project Logo">
-                <div class="entry-text-container">
-                    <a href="https://github.com/SimonXVB/Odin-Project-Repo" target="_blank">Odin Project</a>
-                    <p id="entry-odin">A Repo containing all of my 'The Odin Project' Projects</p>
-                    <div class="tags-container">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Other</span>
-                    </div>
-                </div>
-            </div>
-            <div class="entry">
-                <img src="/assets/posta-logo.png" alt="Posta Social Logo">
-                <div class="entry-text-container">
-                    <a href="https://github.com/SimonXVB/Posta-Social" target="_blank">Posta Social</a>
-                    <p id="entry-posta">A Social Media app inspired by Twitter</p>
-                    <div class="tags-container">
-                        <span>React</span>
-                        <span>Tailwind</span>
-                        <span>Express</span>
-                        <span>Prsima ORM</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="entry">
-                <img src="/assets/swan.png" alt="Swan Media Player Logo">
-                <div class="entry-text-container">
-                    <a href="https://github.com/SimonXVB/Swan-MP" target="_blank">Swan Media Player</a>
-                    <p id="entry-swan">A media player written using electron</p>
-                    <div class="tags-container">
-                        <span>React</span>
-                        <span>Tailwind</span>
-                        <span>Electron</span>
-                    </div>
-                </div>
-            </div>
-            <div class="entry">
-                <img src="/assets/PDEdit-Logo.jpg" alt="PDEdit Logo">
-                <div class="entry-text-container">
-                    <a href="https://github.com/SimonXVB/PDEdit" target="_blank">PDEdit</a>
-                    <p id="entry-pdedit">A simple PDF editing app</p>
-                    <div class="tags-container">
-                        <span>React</span>
-                        <span>Tailwind</span>
-                        <span>TypeScript</span>
-                    </div>
-                </div>
-            </div>
-            <div class="entry">
-                <img src="/assets/D2G.png" alt="PDEdit Logo">
-                <div class="entry-text-container">
-                    <a href="https://github.com/SimonXVB/Draw2Gether" target="_blank">Draw2Gether</a>
-                    <p id="entry-draw2gether">A room-based interactive drawing app</p>
-                    <div class="tags-container">
-                        <span>React</span>
-                        <span>Tailwind</span>
-                        <span>TypeScript</span>
-                        <span>Socket.io</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="buttons">
-            <button data-active>[Home]</button>
-            <button>[Stack]</button>
-            <button>[Projects]</button>
+<body style="margin: 0; background-color: #A5B68D;">
+    <nav id="nav">&lt;XVB&gt;</nav>
+    <div id="header">
+        <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0;" viewBox="0 0 1440 320">
+            <path fill="#DA8359" fill-opacity="0.75" d="M0,64L48,80C96,96,192,128,288,133.3C384,139,480,117,576,128C672,139,768,181,864,170.7C960,160,1056,96,1152,112C1248,128,1344,224,1392,272L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+        </svg>
+        <div>
+            <h1>SimonXVB</h1>
+            <h2><span>Web</span> Developer</h2>
+            <h2>Based in <span>AUT</span></h2>
         </div>
     </div>
-    <div id="crt"></div>
-    <div id="scanline"></div>
-    <script src="main.js" type="module"></script>
-    <script src="langSwitcher.js" type="module"></script>
+    <div id="stack">
+        <div id="double-container">
+            <div class="stack-container">
+                <h1>General</h1>
+                <div class="language-container">
+                    <div class="entry">
+                        <img src="Assets/html.png">
+                        <p>HTML</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/css.png">
+                        <p>CSS</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/js.png">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/ts.png">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stack-container">
+                <h1>Frontend</h1>
+                <div class="language-container">
+                    <div class="entry">
+                        <img src="Assets/vite.png">
+                        <p>Vite</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/tailwind.png">
+                        <p>Tailwind CSS</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/react.png">
+                        <p>React</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stack-container">
+            <h1>Backend</h1>
+            <div class="language-container">
+                <div class="entry">
+                    <img src="Assets/postgres.png">
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/socket.png">
+                    <p>Socket.io</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/prisma.png">
+                    <p>Prisma</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/express.png">
+                    <p>Express</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/electron.png">
+                    <p>Electron</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <h1>Projects</h1>
+        <div class="projects-wrapper">
+            <div class="project-container">
+                <div class="container-top">
+                    <img src="Assets/posta-logo.png">
+                    <p>Posta Social</p>
+                </div>
+                <div class="desc">
+                    A social media app inspired by Twitter.
+                </div>
+                <div class="tags">
+                    <span>Vite</span>
+                    <span>React</span>
+                    <span>Tailwind CSS</span>
+                    <span>Express</span>
+                    <span>Prisma</span>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="container-top">
+                    <img src="Assets/S-MP-Logo-Small.png">
+                    <p>S-MP</p>
+                </div>
+                <div class="desc">
+                    A media player which plays audio and video.
+                </div>
+                <div class="tags">
+                    <span>Vite</span>
+                    <span>React</span>
+                    <span>Tailwind CSS</span>
+                    <span>Electron</span>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="container-top">
+                    <img src="Assets/Apple.png">
+                    <p>PD-Edit</p>
+                </div>
+                <div class="desc">
+                    A PDF viewer with basic editing.
+                </div>
+                <div class="tags">
+                    <span>Vite</span>
+                    <span>React</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="container-top">
+                    <img src="Assets/D2G.png">
+                    <p>Draw2Gether</p>
+                </div>
+                <div class="desc">
+                    A room-based collaborative drawing app.
+                </div>
+                <div class="tags">
+                    <span>Vite</span>
+                    <span>React</span>
+                    <span>Tailwind CSS</span>
+                    <span>Electron</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <a href="https://github.com/SimonXVB" target="_blank">GitHub</a>
+    </footer>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+    </style>
 </body>
 </html>
