@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Styles/footer.css">
     <link rel="stylesheet" href="/Styles/header.css">
-    <link rel="stylesheet" href="/Styles/nav.css">
     <link rel="stylesheet" href="/Styles/projects.css">
     <link rel="stylesheet" href="/Styles/stack.css">
     <link rel="icon" type="image/png" href="Assets/favicon-96x96.png" sizes="96x96"/>
@@ -13,56 +12,53 @@
     <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png"/>
     <title>Portfolio</title>
 </head>
-<body style="margin: 0; background-color: #A5B68D;">
-    <nav id="nav">&lt;XVB&gt;</nav>
+<body>
     <div id="header">
-        <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0;" viewBox="0 0 1440 320">
-            <path fill="#DA8359" fill-opacity="0.75" d="M0,64L48,80C96,96,192,128,288,133.3C384,139,480,117,576,128C672,139,768,181,864,170.7C960,160,1056,96,1152,112C1248,128,1344,224,1392,272L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-        </svg>
         <div>
-            <h1>SimonXVB</h1>
-            <h2><span>Web</span> Developer</h2>
-            <h2>Based in <span>AUT</span></h2>
+            <h1>Simon M.</h1>
+            <div>
+                <h2>Web Developer</h2>
+                <div></div>
+                <h2>Based in AUT</h2>
+            </div>
         </div>
     </div>
     <div id="stack">
-        <div id="double-container">
-            <div class="stack-container">
-                <h1>General</h1>
-                <div class="language-container">
-                    <div class="entry">
-                        <img src="Assets/html.png">
-                        <p>HTML</p>
-                    </div>
-                    <div class="entry">
-                        <img src="Assets/css.png">
-                        <p>CSS</p>
-                    </div>
-                    <div class="entry">
-                        <img src="Assets/js.png">
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="entry">
-                        <img src="Assets/ts.png">
-                        <p>TypeScript</p>
-                    </div>
+        <div class="stack-container">
+            <h1>General</h1>
+            <div class="language-container">
+                <div class="entry">
+                    <img src="Assets/html.png">
+                    <p>HTML</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/css.png">
+                    <p>CSS</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/js.png">
+                    <p>JavaScript</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/ts.png">
+                    <p>TypeScript</p>
                 </div>
             </div>
-            <div class="stack-container">
-                <h1>Frontend</h1>
-                <div class="language-container">
-                    <div class="entry">
-                        <img src="Assets/vite.png">
-                        <p>Vite</p>
-                    </div>
-                    <div class="entry">
-                        <img src="Assets/tailwind.png">
-                        <p>Tailwind CSS</p>
-                    </div>
-                    <div class="entry">
-                        <img src="Assets/react.png">
-                        <p>React</p>
-                    </div>
+        </div>
+        <div class="stack-container">
+            <h1>Frontend</h1>
+            <div class="language-container">
+                <div class="entry">
+                    <img src="Assets/vite.png">
+                    <p>Vite</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/tailwind.png">
+                    <p>Tailwind</p>
+                </div>
+                <div class="entry">
+                    <img src="Assets/react.png">
+                    <p>React</p>
                 </div>
             </div>
         </div>
@@ -96,63 +92,87 @@
         <h1>Projects</h1>
         <div class="projects-wrapper">
             <div class="project-container">
-                <div class="container-top">
+                <div class="project-top">
                     <img src="Assets/posta-logo.png">
-                    <p>Posta Social</p>
-                </div>
-                <div class="desc">
-                    A social media app inspired by Twitter.
+                    <div class="container-top">
+                        <a class="title" href="https://github.com/SimonXVB/Posta-Social" target="_blank">
+                            <span>Posta Social</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </a>
+                        <p class="desc">A social media app inspired by Twitter.</p>
+                    </div>
                 </div>
                 <div class="tags">
                     <span>Vite</span>
                     <span>React</span>
-                    <span>Tailwind CSS</span>
+                    <span>Tailwind</span>
                     <span>Express</span>
                     <span>Prisma</span>
                 </div>
             </div>
             <div class="project-container">
-                <div class="container-top">
-                    <img src="Assets/S-MP-Logo-Small.png">
-                    <p>S-MP</p>
-                </div>
-                <div class="desc">
-                    A media player which plays audio and video.
+                <div class="project-top">
+                    <img src="Assets/S-MP-Logo-new-small.png">
+                    <div>
+                        <a class="title" href="https://github.com/SimonXVB/S-MP" target="_blank">
+                            <span>S-MP</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </a>
+                        <p class="desc">A media player which plays audio and video.</p>
+                    </div>
                 </div>
                 <div class="tags">
                     <span>Vite</span>
                     <span>React</span>
-                    <span>Tailwind CSS</span>
+                    <span>Tailwind</span>
                     <span>Electron</span>
                 </div>
             </div>
             <div class="project-container">
-                <div class="container-top">
+                <div class="project-top">
                     <img src="Assets/Apple.png">
-                    <p>PD-Edit</p>
-                </div>
-                <div class="desc">
-                    A PDF viewer with basic editing.
+                    <div>
+                        <a class="title" href="https://github.com/SimonXVB/PDEdit" target="_blank">
+                            <span>PD-Edit</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </a>
+                        <p class="desc">A PDF viewer with basic editing.</p>
+                    </div>
                 </div>
                 <div class="tags">
                     <span>Vite</span>
                     <span>React</span>
-                    <span>Tailwind CSS</span>
+                    <span>Tailwind</span>
                 </div>
             </div>
             <div class="project-container">
-                <div class="container-top">
+                <div class="project-top">
                     <img src="Assets/D2G.png">
-                    <p>Draw2Gether</p>
-                </div>
-                <div class="desc">
-                    A room-based collaborative drawing app.
+                    <div>
+                        <a class="title" href="https://github.com/SimonXVB/Draw2Gether" target="_blank">
+                            <span>Draw2Gether</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </a>
+                        <p class="desc">A room-based collaborative drawing app.</p>
+                    </div>
                 </div>
                 <div class="tags">
                     <span>Vite</span>
                     <span>React</span>
-                    <span>Tailwind CSS</span>
-                    <span>Electron</span>
+                    <span>Tailwind</span>
+                    <span>Socket.io</span>
                 </div>
             </div>
         </div>
@@ -161,7 +181,6 @@
         <a href="https://github.com/SimonXVB" target="_blank">GitHub</a>
     </footer>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
     </style>
 </body>

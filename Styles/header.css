@@ -1,75 +1,79 @@
-#header {
-    position: relative;
-    overflow: hidden;
+body {
+    margin: 0; 
+    background-color: rgb(36, 36, 36); 
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url(../Assets/arrow1.svg), url(../Assets/smiley.svg);
-    background-repeat: no-repeat;
-    background-size: 11rem, 8rem;
-    background-position: 63% 85%, 20% 35%;
+    margin-block: 48px;
+}
+
+#header {
+    border-block: 1px solid rgb(105, 105, 105);
+    padding-block: 4px;
+    max-width: 500px;
+    width: 100%;
+    margin-inline: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 #header > div {
-    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#header > div > div {
+    display: flex;
+    gap: 16px;
+}
+
+#header > div > div > div {
+    background-color: rgb(255, 183, 49);
+    width: 0.6px;
+    height: auto;
 }
 
 #header h1 {
-    margin: 4px;
-    font-family: "Sour Gummy", sans-serif;
+    margin: 0;
+    font-weight: 100;
     color: #FCFAEE;
-    font-size: 4.5rem;
-}
-
-#header h1::before {
-    content: "<";
-    color: #DA8359;
-}
-
-#header h1::after {
-    content: ">";
-    color: #DA8359;
-}
-
-#header span {
-    color: #DA8359;
+    font-size: 3rem;
+    text-align: left;
 }
 
 #header h2 {
-    font-family: "Cal Sans", sans-serif;
-    font-weight: 900;
+    font-weight: 100;
     margin: 0;
     color: #FCFAEE;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     #header {
-        background-size: 8rem;
-        background-position: 90% 85%, 10% 20% !important;
-        background-size: 9rem, 5rem !important;
+        max-width: 430px;
     }
 
     #header h1 {
-        font-size: 3.5rem;
-        text-align: left;
+        font-size: 2.5rem;
     }
 
     #header h2 {
-        font-size: 2rem;
-        text-align: left;
-    }
-
-    #header svg {
-        height: 15rem;
+        font-size: 1.2rem;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
     #header {
-        background-position: 80% 85%, 5% 50%;
-        background-size: 10rem, 8rem;
+        max-width: 350px;
+    }
+
+    #header h1 {
+        font-size: 2rem;
+    }
+
+    #header h2 {
+        font-size: 1.1rem;
     }
 }

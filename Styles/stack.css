@@ -1,113 +1,62 @@
 #stack {
-    min-height: 100vh;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    background-image: url(../Assets/arrow2.svg), url(../Assets/brackets.svg);
-    background-repeat: no-repeat;
-    background-size: 150px, 150px;
-    background-position: 20% 40%, 90% 10%;
-}
-
-#double-container {
-    display: flex;
-    gap: 3rem;
 }
 
 .stack-container {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    background-color: #FCFAEE;
+    align-items: center;
+    padding: 24px;
+    margin-block: 24px;
     width: fit-content;
-    border-radius: 12px;
-    box-shadow: 8px 8px #DA8359;
-    padding: 12px;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+    margin-inline: 24px;
 }
 
 .stack-container h1 {
-    font-family: "Sour Gummy", sans-serif;
+    color: white;
     margin-top: 0;
+    font-weight: 100;
 }
 
 .language-container {
     display: flex;
-    width: fit-content;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    border-bottom: 1px solid rgb(255, 183, 49);
 }
 
 .entry {
-    transition: all 200ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
 }
 
 .entry img {
-    position: relative;
-    margin-inline: 8px;
-    height: 100px;
-    padding: 12px;
-    padding-bottom: 0;
-    background-color: #FCFAEE;
-    z-index: 10;
+    height: 64px;
 }
 
 .entry p {
-    margin: 0;
-    font-family: "Cal Sans", sans-serif;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: all 200ms;
-}
-
-.entry:hover {
-    scale: 110%;
-}
-
-.entry:hover > p {
-    transform: translateY(0%);
-    opacity: 1;
-}
-
-@media (max-width: 1150px) {
-    #double-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .entry p {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-
-    .entry img {
-        height: 80px;
-    }
+    color: white;
+    margin-left: 6px;
+    font-size: 1.3rem;
 }
 
 @media (max-width: 750px) {
-    .stack-container {
-        margin-inline: 24px;
-    }
-
     .stack-container h1 {
-        font-size: 1.8rem;
-    }   
-
-    .language-container {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .entry {
-        margin-bottom: 12px;
-    }
-
-    .entry p {
-        transform: translateY(0%);
-        opacity: 1;
+        font-size: 1.7rem;
     }
 
     .entry img {
-        height: 70px;
+        height: 48px;
+    }
+
+    .entry p {
+        font-size: 1.1rem;
     }
 }
