@@ -12,7 +12,7 @@ function randY() {
 
 
 function starrySky() {
-    for(let i = 0; i < 250; i++) {
+    for(let i = 0; i < 150; i++) {
         const star = document.createElement("div");
         
         star.style.height = "2px";
@@ -30,3 +30,8 @@ function starrySky() {
     };
 };
 starrySky();
+
+window.onresize = () => {
+    document.getElementById("sky").innerHTML = "";
+    starrySky();
+};
