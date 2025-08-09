@@ -30,8 +30,3 @@ function starrySky() {
     };
 };
 starrySky();
-
-window.onresize = () => {
-    document.getElementById("sky").innerHTML = "";
-    starrySky();
-};
