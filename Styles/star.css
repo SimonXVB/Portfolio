@@ -1,0 +1,11 @@
+@keyframes star {
+    from {
+        opacity: 50%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    to {
+        opacity: 50%;
+    }
+}
