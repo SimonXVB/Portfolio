@@ -130,3 +130,13 @@ body {
         font-size: 1.1rem;
     }
 }
+
+@media (max-width: 350px) {
+    #header {
+        max-width: 300px;
+    }
+
+    #rotate-wrapper {
+        top: -90%;
+    }
+}
