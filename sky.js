@@ -1,3 +1,5 @@
+document.getElementById("sky").style.width = "100vw";
+
 function randX() {
     const width = document.body.clientWidth - 20;
 
@@ -12,6 +14,8 @@ function randY() {
 
 
 function starrySky() {
+    document.getElementById("sky").innerHTML = "";
+    
     for(let i = 0; i < 150; i++) {
         const star = document.createElement("div");
         
@@ -30,3 +34,14 @@ function starrySky() {
     };
 };
 starrySky();
+
+let prevWidth;
+
+const observer = new ResizeObserver(observer => {
+    if(observer[0].contentRect.width !== prevWidth) {
+        prevWidth = observer[0].contentRect.width;
+        starrySky();
+    };
+});
+
+observer.observe(document.body);

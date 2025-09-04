@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/footer.css">
-    <link rel="stylesheet" href="/Styles/header.css">
-    <link rel="stylesheet" href="/Styles/projects.css">
-    <link rel="stylesheet" href="/Styles/stack.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/projects.css">
+    <link rel="stylesheet" href="Styles/stack.css">
     <link rel="stylesheet" href="Styles/star.css">
-    <link rel="icon" type="image/png" href="Assets/favicon-96x96.png" sizes="96x96"/>
-    <link rel="shortcut icon" href="Assets/favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="icon" type="image/png" href="/Favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="shortcut icon" href="/Favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Portfolio"/>
+    <link rel="manifest" href="/Favicon/site.webmanifest"/>
     <title>Portfolio</title>
 </head>
 <body>
@@ -31,41 +34,43 @@
         </div>
     </div>
     <div id="stack">
-        <div class="stack-container">
-            <h1>General</h1>
-            <div class="language-container">
-                <div class="entry">
-                    <img src="Assets/html.png" alt="HTML">
-                    <p>HTML</p>
-                </div>
-                <div class="entry">
-                    <img src="Assets/css.png" alt="CSS">
-                    <p>CSS</p>
-                </div>
-                <div class="entry">
-                    <img src="Assets/js.png" alt="JS">
-                    <p>JavaScript</p>
-                </div>
-                <div class="entry">
-                    <img src="Assets/ts.png" alt="TS">
-                    <p>TypeScript</p>
+        <div id="general-frontend-wrapper">
+            <div class="stack-container">
+                <h1>General</h1>
+                <div class="language-container">
+                    <div class="entry">
+                        <img src="Assets/html.png" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/css.png" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/js.png" alt="JS" class="roundedJS">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/ts.png" alt="TS">
+                        <p>TypeScript</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="stack-container">
-            <h1>Frontend</h1>
-            <div class="language-container">
-                <div class="entry">
-                    <img src="Assets/vite.png" alt="Vite">
-                    <p>Vite</p>
-                </div>
-                <div class="entry">
-                    <img src="Assets/tailwind.png" alt="Tailwind">
-                    <p>Tailwind</p>
-                </div>
-                <div class="entry">
-                    <img src="Assets/react.png" alt="React">
-                    <p>React</p>
+            <div class="stack-container">
+                <h1>Frontend</h1>
+                <div class="language-container">
+                    <div class="entry">
+                        <img src="Assets/vite.png" alt="Vite">
+                        <p>Vite</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/tailwind.png" alt="Tailwind">
+                        <p>Tailwind</p>
+                    </div>
+                    <div class="entry">
+                        <img src="Assets/react.png" alt="React">
+                        <p>React</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,7 +82,7 @@
                     <p>PostgreSQL</p>
                 </div>
                 <div class="entry">
-                    <img src="Assets/socket.png" alt="Socket.io">
+                    <img src="Assets/socket.png" alt="Socket.io" class="bg">
                     <p>Socket.io</p>
                 </div>
                 <div class="entry">
@@ -85,7 +90,7 @@
                     <p>Prisma</p>
                 </div>
                 <div class="entry">
-                    <img src="Assets/express.png" alt="Express">
+                    <img src="Assets/express.png" alt="Express" class="bg">
                     <p>Express</p>
                 </div>
                 <div class="entry">
@@ -163,7 +168,7 @@
             </div>
             <div class="project-container">
                 <div class="project-top">
-                    <img src="Assets/D2G.png" alt="D2G">
+                    <img src="Assets/D2G.png" alt="D2G" class="roundedD2G">
                     <div>
                         <a class="title" href="https://github.com/SimonXVB/Draw2Gether" target="_blank">
                             <span>Draw2Gether</span>
@@ -207,9 +212,6 @@
         <a href="https://github.com/SimonXVB" target="_blank">GitHub</a>
     </footer>
     <div id="sky"></div>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-    </style>
     <script src="sky.js"></script>
 </body>
 </html>
