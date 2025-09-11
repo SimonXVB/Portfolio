@@ -1,0 +1,40 @@
+#about {
+    color: white;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    margin-inline: 24px;
+}
+
+#about h1 {
+    margin-inline: 24px;
+}
+
+#about-content {
+    font-size: 1.1rem;
+    background-color: rgb(37, 37, 37);
+    box-shadow: inset 0px 0px 8px 2px rgb(56, 56, 56);
+    padding-inline: 24px;
+    padding-block: 16px;
+    border-radius: 12px;
+    margin-inline: 24px;
+}
+
+#about-content ul {
+    padding-left: 20px;
+}
+
+#about-content li {
+    padding-block: 2px;
+}
+
+@media (max-width: 600px) {
+    #about {
+        margin-top: 80px;
+    }
+
+    #about-content {
+        font-size: 0.9rem;
+    }
+}

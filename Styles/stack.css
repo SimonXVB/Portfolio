@@ -1,84 +1,75 @@
 #stack {
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#general-frontend-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#general-frontend-wrapper > div {
-    width: fit-content;
 }
 
 .stack-container {
     display: flex;
     flex-direction: column;
-    align-items: start;
     margin: 24px;
-    background-color: rgb(34, 34, 34);
-    box-shadow: -3px -3px rgb(255, 183, 49);
-    padding-inline: 24px;
-    padding-block: 25px;
-    border-radius: 12px;
+    max-width: 1000px;
 }
 
 .stack-container h1 {
     color: white;
-    margin-top: 0;
-    font-weight: 100;
+    margin-bottom: 32px;
 }
 
 .language-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .entry {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 4px;
+    padding: 12px;
+    border-radius: 12px;
+    gap: 12px;
+    width: 200px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: inset 0px 0px 8px 2px rgb(56, 56, 56);
 }
 
 .entry img {
-    height: 64px;
+    height: 32px;
 }
 
 .entry p {
     color: white;
-    font-size: 1.3rem;
-    margin-bottom: 0;
+    font-size: 1.2rem;
+    margin: 0;
 }
 
 .roundedJS {
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
-.bg {
-    background-color: rgb(255, 183, 49);
-    border-radius: 12px;
-    padding: 4px;
-    box-sizing: border-box;
+.invert {
+    filter: brightness(0) invert();
 }
 
-@media (max-width: 750px) {
-    .stack-container h1 {
-        font-size: 1.7rem;
+@media (max-width: 520px) {
+    .stack-container {
+        margin: 16px;
+    }
+
+    .language-container {
+        gap: 8px;
+    }
+
+    .entry {
+        width: 140px;
     }
 
     .entry img {
-        height: 48px;
+        height: 24px;
     }
 
     .entry p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
