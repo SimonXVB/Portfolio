@@ -8,3 +8,16 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.intersect {
+    scale: 50%;
+    opacity: 50%;
+    transform: translateY(-25px);
+    transition: all 350ms ease-in-out;
+}
+
+.grow {
+    scale: 100% !important;
+    opacity: 100% !important;
+    transform: translateY(0px);
+}

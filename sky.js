@@ -12,7 +12,6 @@ function randY() {
     return Math.floor(Math.random() * height);
 };
 
-
 function starrySky() {
     document.getElementById("sky").innerHTML = "";
     
@@ -37,11 +36,11 @@ starrySky();
 
 let prevWidth;
 
-const observer = new ResizeObserver(observer => {
+const resizeObserver = new ResizeObserver(observer => {
     if(observer[0].contentRect.width !== prevWidth) {
         prevWidth = observer[0].contentRect.width;
         starrySky();
     };
 });
 
-observer.observe(document.body);
+resizeObserver.observe(document.body);
