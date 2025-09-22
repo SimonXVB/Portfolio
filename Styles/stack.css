@@ -44,10 +44,6 @@
     margin: 0;
 }
 
-.roundedJS {
-    border-radius: 4px;
-}
-
 .invert {
     filter: brightness(0) invert();
 }

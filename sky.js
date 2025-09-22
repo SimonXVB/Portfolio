@@ -1,46 +1,80 @@
-document.getElementById("sky").style.width = "100vw";
+const canvas = document.getElementById("sky");
+const ctx = canvas.getContext("2d");
 
-function randX() {
-    const width = document.body.clientWidth - 20;
+canvas.height = document.body.clientHeight;
+canvas.width = document.body.clientWidth;
 
-    return Math.floor(Math.random() * width);
+let stars = [];
+let animationFrame;
+
+function getRandomStartData() {    
+    const x = Math.floor(Math.random() * document.body.clientWidth);
+    const y = Math.floor(Math.random() * document.body.clientHeight);
+    const radius = Math.floor(Math.random() * 2);
+    const opacity = Math.random();
+    const isIncreasing = Math.random() < 0.5;
+
+    return [x, y, radius, opacity, isIncreasing];
 };
 
-function randY() {
-    const height = document.body.clientHeight;
-
-    return Math.floor(Math.random() * height);
-};
-
-function starrySky() {
-    document.getElementById("sky").innerHTML = "";
+function initializeSky() {
+    stars = [];
     
-    for(let i = 0; i < 150; i++) {
-        const star = document.createElement("div");
-        
-        star.style.height = "2px";
-        star.style.width = "2px";
-        star.style.backgroundColor = "white";
-        star.style.position = "absolute";
-        star.style.left = randX() + "px";
-        star.style.top = randY() + "px";
-        star.style.boxShadow = "0px 0px 20px 1px rgb(255, 255, 255)";
-        star.style.zIndex = "-1";
-        star.style.animation = "star 5s infinite ease-in-out alternate";
-        star.style.animationDelay = ((randX() - randY()) - (randX() / 2)) + "ms";
+    for(let i = 0; i < 500; i++) {
+        const [randX, randY, radius, opacity, isIncreasing] = getRandomStartData();
 
-        document.getElementById("sky").appendChild(star);
+        stars.push({
+            x: randX,
+            y: randY,
+            radius: radius,
+            opacity: opacity,
+            isIncreasing: isIncreasing
+        });
     };
-};
-starrySky();
 
+    requestAnimationFrame(updateStars);
+};
+initializeSky();
+
+function updateStars() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for(let i = 0; i < stars.length; i++) {
+        if(stars[i].isIncreasing && stars[i].opacity >= 1) {
+            stars[i].isIncreasing = false;
+        } else if(!stars[i].isIncreasing && stars[i].opacity <= 0) {
+            stars[i].isIncreasing = true;
+        };
+
+        const rate = stars[i].isIncreasing ? 0.004 : -0.004;
+        const newOpacity = stars[i].opacity + rate < 0 ? 0 : stars[i].opacity + rate;
+
+        ctx.beginPath();
+        ctx.shadowColor = "#ffb731ff";
+        ctx.shadowBlur = 1;
+        ctx.fillStyle = "#fff";
+        ctx.arc(stars[i].x, stars[i].y, stars[i].radius, 0, 2 * Math.PI);
+        ctx.globalAlpha = newOpacity;
+        ctx.fill();
+
+        stars[i].opacity = newOpacity;
+    };
+
+    animationFrame = requestAnimationFrame(updateStars);
+};
+
+//Resize Observer
 let prevWidth;
 
 const resizeObserver = new ResizeObserver(observer => {
     if(observer[0].contentRect.width !== prevWidth) {
         prevWidth = observer[0].contentRect.width;
-        starrySky();
+        cancelAnimationFrame(animationFrame);
+        initializeSky();
     };
+
+    canvas.height = document.body.clientHeight;
+    canvas.width = document.body.clientWidth;
 });
 
 resizeObserver.observe(document.body);
