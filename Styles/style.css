@@ -9,6 +9,18 @@ body {
     align-items: center;
 }
 
+html, body {
+    scrollbar-color: rgb(255, 183, 49) rgb(28, 28, 28);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 183, 49);
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(28, 28, 28);
+}
+
 .intersect {
     scale: 50%;
     opacity: 50%;
